@@ -1,0 +1,74 @@
+congrats-project/
+│
+├── index.html        (File utama yang berisi kerangka website)
+│
+├── css/
+│   └── style.css     (File untuk mengatur warna, tata letak, dan animasi)
+│
+├── js/
+│   └── script.js     (File untuk efek interaktif, misalnya efek confetti/partikel)
+│
+└── assets/
+    └── images/       (Folder untuk menyimpan semua foto yang Anda miliki)
+        ├── foto-1.jpg
+        ├── foto-2.jpg
+        └── foto-bg.jpg
+
+
+
++-----------------------------------------------------------+
+|                                                           |
+|                     [ HERO SECTION ]                      |
+|                 (Latar Belakang: Foto/Warna Gelap)        |
+|                                                           |
+|             "Alhamdulillah, Kamu Hebat! 🎉"               |
+|                                                           |
+|        Sebuah apresiasi untuk perjuangan & puasamu        |
+|                                                           |
+|                   [ Baca Pesanku ⬇️ ]                      |
+|                                                           |
++-----------------------------------------------------------+
+|                                                           |
+|                 [ APPRECIATION SECTION ]                  |
+|                 (Latar Belakang: Putih/Terang)            |
+|                                                           |
+|               "Perjalanan yang Nggak Mudah"               |
+|                                                           |
+|      -----------------------------------------------      |
+|      | Aku tahu perjalanan ini tidak mudah. Menahan|      |
+|      | ego, bekerja keras siang malam, sekaligus   |      |
+|      | menjaga ibadah puasa hingga tamat...        |      |
+|      -----------------------------------------------      |
+|                                                           |
++-----------------------------------------------------------+
+|                                                           |
+|                    [ GALLERY SECTION ]                    |
+|                (Latar Belakang: Abu-abu Muda)             |
+|                                                           |
+|                     "Jejak Langkahmu"                     |
+|                                                           |
+|        +---------+     +---------+     +---------+        |
+|        |         |     |         |     |         |        |
+|        |  Foto 1 |     |  Foto 2 |     |  Foto 3 |        |
+|        |         |     |         |     |         |        |
+|        +---------+     +---------+     +---------+        |
+|                                                           |
+|        +---------+     +---------+     +---------+        |
+|        |         |     |         |     |         |        |
+|        |  Foto 4 |     |  Foto 5 |     |  Foto 6 |        |
+|        |         |     |         |     |         |        |
+|        +---------+     +---------+     +---------+        |
+|                                                           |
++-----------------------------------------------------------+
+|                                                           |
+|               [ CLOSING & WISHES SECTION ]                |
+|               (Latar Belakang: Warna Hangat/Gelap)        |
+|                                                           |
+|   ✨ *Efek Animasi Confetti / Kertas Warna-warni Jatuh* ✨  |
+|                                                           |
+|         "Semoga lelahmu menjadi lillah, dan ini           |
+|         menjadi awal dari hal-hal baik lainnya."          |
+|                                                           |
++-----------------------------------------------------------+
+|  [ FOOTER ] Dibuat dengan bangga oleh Anda - 2026         |
++-----------------------------------------------------------+

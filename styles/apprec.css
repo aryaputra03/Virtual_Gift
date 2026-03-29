@@ -1,0 +1,308 @@
+/* ============================================================
+   APPRECIATION SECTION — GREEN EDITION 🌿
+   ============================================================ */
+
+.appreciate {
+  position: relative;
+  background: #f0faf4;       /* mint putih segar */
+  padding: 0 0 100px;
+  overflow: hidden;
+}
+
+/* Teks di section terang */
+.appreciate,
+.appreciate h2,
+.appreciate h3,
+.appreciate p,
+.appreciate strong {
+  color: #0d3320;
+}
+
+/* ---- Garis Ornamen SVG wave ---- */
+.appreciate__top-line {
+  width: 100%;
+  line-height: 0;
+  margin-bottom: 72px;
+  overflow: hidden;
+}
+
+.appreciate__top-line svg {
+  width: 100%;
+  height: 20px;
+  display: block;
+}
+
+/* ============================================================
+   SECTION HEADER (dipakai di semua section)
+   ============================================================ */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-header__tag {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: #2d6a4f;
+  margin-bottom: 14px;
+}
+
+.section-header__title {
+  font-family: 'Comfortaa', cursive;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0d3320;
+  margin: 0 0 20px;
+}
+
+.section-header__title em {
+  font-style: italic;
+  color: #2d6a4f;
+}
+
+.section-header__sub {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #3a6650;
+  margin: -8px 0 20px;
+  line-height: 1.75;
+}
+
+/* Garis dekoratif bawah judul */
+.section-header__line {
+  width: 52px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #52b788, transparent);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   APPRECIATION CARD
+   ============================================================ */
+
+.appreciate__card {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto 64px;
+  padding: 52px 64px;
+  background: #ffffff;
+  border: 1px solid rgba(82, 183, 136, 0.22);
+  border-radius: 24px;
+  box-shadow:
+    0  4px  24px rgba(30, 100, 60, 0.08),
+    0  1px   3px rgba(30, 100, 60, 0.05);
+}
+
+/* Garis aksen hijau sisi kiri */
+.appreciate__card::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, #52b788, transparent);
+  border-radius: 0 2px 2px 0;
+}
+
+/* ---- Tanda Petik ---- */
+.appreciate__quote-mark {
+  display: block;
+  font-family: 'Comfortaa', cursive;
+  font-size: 7rem;
+  line-height: 0.6;
+  color: #52b788;
+  opacity: 0.16;
+  user-select: none;
+  margin-bottom: 12px;
+}
+
+.appreciate__quote-mark--end {
+  text-align: right;
+  margin-top: 16px;
+  margin-bottom: 0;
+  line-height: 0.4;
+  transform: rotate(180deg);
+  display: block;
+}
+
+/* ---- Body Teks ---- */
+.appreciate__text-body { padding: 0 8px; }
+
+.appreciate__text-body p {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(0.95rem, 1.8vw, 1.06rem);
+  font-weight: 400;
+  line-height: 1.95;
+  color: #1a472a;
+  margin: 0 0 20px;
+}
+
+.appreciate__text-body p:last-child { margin-bottom: 0; }
+
+.appreciate__text-body strong {
+  font-weight: 700;
+  color: #0d3320;
+}
+
+/* ============================================================
+   HIGHLIGHT ITEMS
+   ============================================================ */
+
+.appreciate__highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+  padding: 36px 40px;
+  background: #ffffff;
+  border: 1px solid rgba(82, 183, 136, 0.20);
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(30, 100, 60, 0.07);
+}
+
+.highlight-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.highlight-item__icon {
+  font-size: 2rem;
+  line-height: 1;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.highlight-item:hover .highlight-item__icon {
+  transform: translateY(-5px) scale(1.18);
+}
+
+.highlight-item__label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.70rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2d6a4f;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.highlight-item__divider {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(180deg, transparent, rgba(82, 183, 136, 0.35), transparent);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   DUO CARDS
+   ============================================================ */
+
+.appreciate__duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.appreciate__duo-card {
+  padding: 40px 36px;
+  background: #ffffff;
+  border: 1px solid rgba(82, 183, 136, 0.20);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(30, 100, 60, 0.06);
+  transition: transform    0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow   0.35s ease,
+              border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.appreciate__duo-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent, #52b788, transparent);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.appreciate__duo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(30, 100, 60, 0.14);
+  border-color: rgba(82, 183, 136, 0.45);
+}
+
+.appreciate__duo-card:hover::after { opacity: 1; }
+
+.appreciate__duo-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 18px;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.appreciate__duo-card:hover .appreciate__duo-icon {
+  transform: scale(1.18);
+}
+
+.appreciate__duo-card h3 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d3320;
+  margin: 0 0 12px;
+}
+
+.appreciate__duo-card p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.85;
+  color: #2d6a4f;
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .appreciate__card { padding: 36px 28px; margin-bottom: 40px; }
+  .appreciate__quote-mark { font-size: 5rem; }
+  .appreciate__highlights { padding: 28px 20px; flex-wrap: wrap; max-width: 100%; }
+  .highlight-item { flex: 1 1 40%; padding: 12px 8px; }
+  .highlight-item__divider { display: none; }
+  .appreciate__duo { grid-template-columns: 1fr; gap: 16px; }
+  .appreciate__duo-card { padding: 32px 24px; }
+}
+
+@media (max-width: 480px) {
+  .appreciate__card { padding: 28px 20px; }
+  .appreciate__card::before { top: 24px; bottom: 24px; }
+  .appreciate__highlights { flex-direction: column; gap: 20px; }
+  .highlight-item { flex-direction: row; justify-content: center; gap: 14px; }
+}

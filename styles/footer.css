@@ -1,0 +1,241 @@
+/* ============================================================
+   FOOTER — GREEN EDITION 🌿
+   ============================================================ */
+
+.footer {
+  position: relative;
+  background: #040f07;
+  padding: 64px 0 40px;
+  overflow: hidden;
+  border-top: 1px solid rgba(82, 183, 136, 0.14);
+}
+
+/* Garis aksen hijau paling atas */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #52b788, transparent);
+  border-radius: 2px;
+}
+
+/* Cahaya redup di bawah */
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 200px;
+  background: radial-gradient(
+    ellipse at center bottom,
+    rgba(82, 183, 136, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* ---- Inner layout ---- */
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Brand ---- */
+.footer__brand {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #52b788;
+  margin: 0 0 16px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer__brand:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ---- Pesan ---- */
+.footer__msg {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 0 0 32px;
+  letter-spacing: 0.03em;
+  line-height: 1.75;
+}
+
+/* ---- Divider ornamen ---- */
+.footer__divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 32px;
+}
+
+.footer__divider::before,
+.footer__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+}
+
+.footer__divider::before {
+  background: linear-gradient(90deg, transparent, rgba(82, 183, 136, 0.28));
+}
+
+.footer__divider::after {
+  background: linear-gradient(90deg, rgba(82, 183, 136, 0.28), transparent);
+}
+
+.footer__divider-icon {
+  font-size: 0.6rem;
+  color: rgba(82, 183, 136, 0.42);
+  letter-spacing: 0.4em;
+  user-select: none;
+}
+
+/* ---- Links ---- */
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(82, 183, 136, 0.58);
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 1px solid rgba(82, 183, 136, 0.20);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: color        0.3s ease,
+              border-color 0.3s ease;
+}
+
+.footer__links a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(82, 183, 136, 0.10);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s ease;
+  border-radius: inherit;
+}
+
+.footer__links a:hover::before { transform: scaleX(1); }
+
+.footer__links a:hover {
+  color: #52b788;
+  border-color: rgba(82, 183, 136, 0.50);
+}
+
+/* ---- Copyright ---- */
+.footer__copy {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.18);
+  margin: 0;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.footer__copy:hover { color: rgba(255, 255, 255, 0.38); }
+
+/* ============================================================
+   SCROLL TO TOP BUTTON
+   ============================================================ */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px; right: 32px;
+  z-index: 500;
+  width: 44px; height: 44px;
+  background: rgba(4, 20, 12, 0.82);
+  border: 1px solid rgba(82, 183, 136, 0.38);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity      0.35s ease,
+              visibility   0.35s ease,
+              transform    0.35s ease,
+              background   0.3s ease,
+              border-color 0.3s ease,
+              box-shadow   0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.scroll-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background: rgba(82, 183, 136, 0.16);
+  border-color: rgba(82, 183, 136, 0.70);
+  box-shadow: 0 4px 20px rgba(82, 183, 136, 0.25);
+  transform: translateY(-3px);
+}
+
+.scroll-to-top:active {
+  transform: translateY(0) scale(0.94);
+  transition-duration: 0.1s;
+}
+
+.scroll-to-top svg {
+  width: 16px; height: 16px;
+  stroke: #52b788;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease;
+}
+
+.scroll-to-top:hover svg { transform: translateY(-2px); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .footer { padding: 52px 0 32px; }
+  .footer__links { gap: 12px; }
+  .footer__links a { font-size: 0.70rem; padding: 7px 14px; }
+  .scroll-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+}

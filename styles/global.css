@@ -1,0 +1,62 @@
+/* ============================================================
+   RESET & GLOBAL — GREEN EDITION 🌿
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* ---- Palet Hijau Utama ---- */
+  --green:         #52b788;
+  --green-light:   #b7e4c7;
+  --green-dark:    #2d6a4f;
+  --green-deeper:  #1b4332;
+  --green-subtle:  rgba(82, 183, 136, 0.12);
+  --green-border:  rgba(82, 183, 136, 0.30);
+  --green-glow:    rgba(82, 183, 136, 0.20);
+
+  /* Alias --gold → --green supaya komponen lama tetap jalan */
+  --gold:          #52b788;
+  --gold-light:    #b7e4c7;
+  --gold-dark:     #2d6a4f;
+  --gold-subtle:   rgba(82, 183, 136, 0.12);
+  --gold-border:   rgba(82, 183, 136, 0.30);
+
+  /* ---- Teks ---- */
+  --text-light:    rgba(255, 255, 255, 0.85);
+  --text-muted:    rgba(255, 255, 255, 0.55);
+
+  /* ---- Font ---- */
+  --font-display:  'Comfortaa', cursive;   /* heading lucu & rounded */
+  --font-body:     'Nunito', sans-serif;   /* body friendly & clean  */
+  --font-arabic:   'Amiri', serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #071a0f;   /* hijau gelap, ganti dari hitam coklat */
+  color: #e8f5ee;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hilangkan underline default semua link */
+a { text-decoration: none; }
+
+/* Seleksi teks berwarna hijau */
+::selection {
+  background: rgba(82, 183, 136, 0.35);
+  color: #fff;
+}

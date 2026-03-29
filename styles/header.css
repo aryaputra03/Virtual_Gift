@@ -1,0 +1,213 @@
+/* ============================================================
+   NAVBAR — GREEN EDITION 🌿
+   ============================================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0;
+  transition: background 0.4s ease,
+              box-shadow  0.4s ease,
+              padding     0.4s ease;
+}
+
+.navbar--scrolled {
+  background: rgba(6, 22, 12, 0.93);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- Inner layout ---- */
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  gap: 24px;
+}
+
+/* ---- Brand ---- */
+.navbar__brand {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: #52b788;
+  white-space: nowrap;
+  user-select: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__brand:hover {
+  opacity: 0.85;
+  transform: scale(1.04);
+}
+
+/* ---- Desktop links ---- */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  display: inline-block;
+  padding: 6px 14px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  border-radius: 20px;
+  transition: color      0.25s ease,
+              background 0.25s ease;
+  position: relative;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 55%;
+  height: 2px;
+  background: #52b788;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar__link:hover {
+  color: #52b788;
+}
+
+.navbar__link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.navbar__link--active {
+  color: #52b788 !important;
+  background: rgba(82, 183, 136, 0.12);
+}
+
+.navbar__link--active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* ---- Hamburger (mobile) ---- */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1.5px solid rgba(82, 183, 136, 0.40);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+  transition: border-color 0.25s ease, background 0.25s ease;
+  flex-shrink: 0;
+}
+
+.navbar__hamburger:hover {
+  border-color: #52b788;
+  background: rgba(82, 183, 136, 0.10);
+}
+
+.navbar__hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #52b788;
+  border-radius: 2px;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  transform-origin: center;
+}
+
+.navbar__hamburger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar__hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__hamburger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---- Mobile menu ---- */
+.navbar__mobile {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  background: rgba(6, 22, 12, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(82, 183, 136, 0.12);
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity    0.3s ease;
+}
+
+.navbar__mobile--open {
+  max-height: 320px;
+  opacity: 1;
+  padding: 8px 0 16px;
+}
+
+.navbar__mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__mobile .navbar__link {
+  display: block;
+  padding: 13px 24px;
+  font-size: 0.9rem;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.68);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.navbar__mobile .navbar__link:last-child {
+  border-bottom: none;
+}
+
+.navbar__mobile .navbar__link::after {
+  display: none;
+}
+
+.navbar__mobile .navbar__link:hover,
+.navbar__mobile .navbar__link--active {
+  color: #52b788;
+  background: rgba(82, 183, 136, 0.08);
+  padding-left: 32px;
+  transition: color 0.25s ease, background 0.25s ease, padding 0.25s ease;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .navbar__links    { display: none; }
+  .navbar__hamburger { display: flex; }
+}
+
+/* ---- Container ---- */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

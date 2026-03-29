@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Abil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+    
+    <link rel="stylesheet" href="/styles/loader.css">
+     <link rel="stylesheet" href="/styles/floating.css">
+     <link rel="stylesheet" href="/styles/header.css">
+     <link rel="stylesheet" href="/styles/global.css">
+     <link rel="stylesheet" href="/styles/hero.css">
+     <link rel="stylesheet" href="/styles/apprec.css">
+     <link rel="stylesheet" href="/styles/gall.css">
+     <link rel="stylesheet" href="/styles/closing.css">
+     <link rel="stylesheet" href="/styles/footer.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})">
+    </script>
+ 
+    <!-- CSS Quiz -->
+    <link rel="stylesheet" href="/styles/quiz.css">
+    </head>
+<body>
+    
+    <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <div class="loader__ring loader__ring--delay"></div>
+      <p class="loader__text">Sabar loading bil</p>
+    </div>
+  </div>
+
+    <div id="particles" class="particles" aria-hidden="true"></div>
+
+    <header id="navbar" class="navbar">
+    <div class="navbar__inner container">
+        <span class="navbar__brand">✦ Virtual Gift Abil ✦</span>
+        
+        <ul class="navbar__links">
+            <li><a href="#hero" class="navbar__link">Beranda</a></li>
+            <li><a href="#appreciate" class="navbar__link">Pujian</a></li>
+            <li><a href="#gallery" class="navbar__link">Gambar</a></li>
+            <li><a href="#closing" class="navbar__link">Close</a></li>
+        </ul>
+        
+        <button id="hamburger" class="navbar__hamburger" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <nav id="mobileMenu" class="navbar__mobile">
+        <ul>
+            <li><a href="#hero" class="navbar__link">Beranda</a></li>
+            <li><a href="#appreciate" class="navbar__link">Pujian</a></li>
+            <li><a href="#gallery" class="navbar__link">Gambar</a></li>
+            <li><a href="#closing" class="navbar__link">Close</a></li> 
+        </ul>
+    </nav>
+  </header>
+  
+    <section id="hero" class="hero">
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__bg" style="background-image: url(assets/tomoro2.png);" aria-hidden="true"></div>
+
+        <div class="hero__ornament hero__ornament--tl" aria-hidden="true"></div>
+        <div class="hero__ornament hero__ornament--br" aria-hidden="true"></div>
+
+        <div class="hero__content container">
+
+            <p class="hero__bismillah reveal" data-delay="0">
+                <span class="amiri" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem;">✨ Congratssss! ✨</span>
+            </p>
+
+            <div class="hero__badge reveal" data-delay="100">
+                <span class="badge__dot"></span>
+                Just a tiny appreciation message
+                <span class="badge__dot"></span>
+            </div>
+
+            <h1 class="hero__title reveal" data-delay="200">
+                GIILLAAA,<br/>
+                <em>WINRATE 100% ya (semoga gak bohong)</em>
+                <span class="hero__emoji" aria-hidden="true">🦖</span>
+            </h1>
+
+            <p class="hero__subtitle reveal" data-delay="350">
+                Hebat bener kamu! Kerja di Tomoro tapi tahan godaan nyomot pastry sama kopi tiap jam. Kalau aku yang kerja di sana, kayaknya gajiku tiap bulan udah habis buat 'investasi' ke perut <br class="br-desk" />
+                Well done
+            </p>
+
+            <a href="#appreciate" class="hero__cta reveal" data-delay="500">
+                <span>Scrolllllll!!!</span>
+                <svg class="hero__cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+            
+            <div class="hero__scroll-hint reveal" data-delay="700" aria-hidden="true">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appreciate" class="appreciate">
+        
+        <div class="appreciate__top-line" aria-hidden="true">
+            <svg viewBox="0 0 800 20" preserveAspectRatio="none">
+                <path d="M0 10 Q200 0 400 10 Q600 20 800 10" stroke="var(--gold)" stroke-width="1.5"
+                fill="none">    
+            </svg>
+        </div>
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-header__tag">-- Just Little Message -- </span>
+                <h2 class="section-header__title">
+                    You're freaking dope! <br/><em>Naiiisss!</em>
+                </h2>
+                <div class="section-header__line" aria-hidden="true"></div>
+            </div>
+            <div class="appreciate__card reveal" data-delay="150">
+                <span class="appreciate__quote-mark" aria-hidden="true">"</span>
+                <div class="appreciate__text-body">
+                    <p>
+                        First of all, selamat ya buat semua hustle kamu! Dari puasa yang jalan terus, 
+                        kerjaan aman, bisnis lancar, sampai side quest kehidupan yang kayaknya nggak ada habisnya. 
+                        Jujur, aku kagum (campur heran sih) sama orang kayak kamu yang kerja di tempat 24 jam. 
+                        Itu jam tidur ngaturnya gimana dah? Pakai sistem gacha? Terus... 
+                        pas Lebaran orang-lain pada sibuk nambah porsi opor ayam, kamu malah sibuk senyum layanin customer.
+                    </p>
+                    <p>
+                        Jujur aku gak tau lagi mau nambah apa wkwkwkw, oh iya donatmu enak lhoo walaupun aku cuman makan 1 doang, sisanya di comot
+                        orang rumah, cuman aku nanyak ke mereka enak katanya lembut, jadi penasaran bakerymu yang lain mungkin kapan kapan ya aku
+                        pesan lagi
+                    </p>
+                    <p>
+                        gimana desain webnya wkwkwk btw aku dah lama gak bikin website terakhir ada 2 tahun yang lalu, aku sengaja kaasih kamu website selain unik
+                         dan ada tuntutan dari kerjaanku yang diharuskan bisa web lagi jadi sekalian project ini aku belajar lagi, yahhh begitu lah anak IT
+                         suruh benerin print, bikin ini bikin itu keknya ntar aku disuruh ngehack ig sekalian. ok terakhir semanggaaattttttttttt abillllllllllllllllll sukses selaluuuuuuuuu!!!!
+                         kurangi vapenya ya hehehe
+                    </p>
+                </div>
+                <span class="appreciate__quote-mark appreciate__quote-mark--end" aria-hidden="true">"</span>
+            </div>
+            <div class="appreciate__highlights reveal" data-delay="300">
+                <div class="highlight-item">
+                    <span class="highlight-item__icon">😿</span>
+                    <p class="highlight-item__label">Super<br/>Sabar</p>
+                </div>
+                <div class="highlight-item__divider" aria-hidden="true"></div>
+                <div class="highlight-item">
+                    <span class="highlight-item__icon">😼</span>
+                    <p class="highlight-item__label">Kerja<br/>Keras</p>
+                </div>
+                <div class="highlight-item__divider" aria-hidden="true"></div>
+                <div class="highlight-item">
+                    <span class="highlight-item__icon">😼</span>
+                    <p class="highlight-item__label">Hati<br>Kuat</p>
+                </div>
+                <div class="highlight-item__divider" aria-hidden="true"></div>
+                <div class="highlight-item">
+                    <span class="highlight-item__icon">🙀</span>
+                    <p class="highlight-item__label">Kamu<br/>Ter-Keren</p>
+                </div>
+            </div>
+            <div class="appreciate__duo reveal" data-delay="450">
+                <div class="appreciate__duo-card">
+                    <div class="appreciate__duo-icon">🌿</div>
+                    <h3>Just Live</h3>
+                    <p>
+                        Teruslah menyala menghadapi dunia. Kejar semua yang selama ini kamu perjuangkan sampai dapat, lalu hiduplah sebebas-bebasnya dengan caramu sendiri!
+                    </p>
+                </div>
+                <div class="appreciate__duo-card">
+                    <div class="appreciate__duo-icon">🌱</div>
+                    <h3>Quote Eren Yeager</h3>
+                    <p>
+                        Aku ini bebas. Apapun yang aku lakukan, apapun jalan yang aku pilih, aku melakukannya atas kehendak bebas dan kemauanku sendiri.
+                    </p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-header__tag">— Foto Random —</span>
+                <h2 class="section-header__title">Foto <em>Lucu!</em>
+                </h2>
+                <p class="section-header__sub">
+                    Gambar kartun random kucing ama hamster!
+                </p>
+                <div class="section-header__line" aria-hidden="true"></div>
+            </div>
+            <div class="gallery__grid reveal" data-delay="100">
+
+                <div class="gallery__item gallery__item--tall">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-1.png" alt="Momen berhaga 1" loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="01">Eh ada ikan hap ah!</div>
+                </div>
+
+               <div class="gallery__item">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-2.png" alt="Momen berharga 2"  loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="02">Laper gess!</div>
+               </div>
+               
+               <div class="gallery__item">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-3.png" alt="Momen berharga 3"  loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="03">Boba dulu</div>
+               </div>
+
+               <div class="gallery__item gallery__item--wide">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-4.png" alt="Momen berharga 4"  loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="04">Nyolong kuaci dulu</div>
+               </div>
+
+               <div class="gallery__item">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-5.png" alt="Momen berharga 5"  loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="05">Hiyaa!</div>
+               </div>
+
+               <div class="gallery__item gallery__item--tall">
+                    <div class="gallery__img-wrap">
+                        <img src="assets/foto-6.png" alt="Momen berharga 6"  loading="lazy" />
+                    </div>
+                    <div class="gallery__caption" data-num="06">baaa!</div>
+               </div>
+            </div>
+            <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan foto">
+                <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
+                <button class="lightbox__prev" id="lightboxPrev" aria-label="Sebelumnya">&#8249;</button>
+                <div class="lightbox__img-wrap">
+                    <img id="lightboxImg" src="" alt="Foto diperbesar">
+                </div>
+                <button class="lightbox__next" id="lightboxNext" aria-label="Selanjutnya">&#8250;</button>
+                <p id="lightboxCaption" class="lightbox__caption"></p>
+            </div>
+            <div id="lightboxBg" class="lightbox__bg"></div>
+        </div>
+    </section>
+
+    <section id="closing" class="closing">
+
+        <canvas id="confettiCanvas" class="closing__canvas" aria-hidden="true"></canvas>
+
+        <div class="closing__moon" aria-hidden="true">🍀</div>
+
+        <div class="container closing__content">
+
+            <div class="closing__ayat reveal" data-delay="0">
+                <p class="amiri" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;">"Every cloud has a silver lining!"</p>
+                <!-- <span class="closing__ayat-trans">
+                    Setelah capek-capek pusing mikirin dunia, pasti ada *reward* manis yang nungguin kamu di depan.
+                </span> -->
+            </div>
+            <div class="closing__divider" aria-hidden="true">✦ ✦ ✦</div>
+
+            <h2 class="closing__title reveal" data-delay="100">
+                Hope every ounce of your exhaustion turns into a beautiful<br />
+                <em class="closing__highlight">success,</em>
+            </h2>
+            <p class="closing__msg reveal" data-delay="200">
+                btw kan ada tombol dibawah itu kan!<br />
+                aku animasiin seharian wkwkwk, cuman gak full seharian yang bikin lama ada persamaan matematika. Bisa disapm juga mencetnya 🌟
+            </p>
+
+            <div class="closing__wishes reveal" data-delay="300">
+                <div class="wish-card">
+                    <div class="wish-card__num">01</div>
+                    <p>Surviving the chaos, working hard, and still finding reasons to smile. That’s the real flex.</p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-card__num">02</div>
+                        <p>Waking up, showing up, and never giving up. So much to be thankful for.</p>
+                </div>
+
+                <div class="wish-card">
+                    <div class="wish-card__num">03</div>
+                        <p>Just another day of turning coffee into hard work and hard work into a good life. So grateful.</p>
+                </div>
+            </div>
+            <button class="closing__confetti-btn" id="triggerConfetti" aria-label="Rayakan!">
+                🎊 Pencet! 🎊
+            </button>
+            <button class="closing__quiz-btn" id="triggerQuiz" aria-label="Coba soal matematika">
+                KLAIMM HADIAHH!!!!
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__brand">✦ Footer ✦</p>
+            <p class="footer__msg">
+                btw kalau butuh website buat kelola bisnis, marektting, rekap, dll bisa chat aku ya
+            </p>
+
+            <div class="footer__divider" aria-hidden="true">
+                <span class="footer__divider-icon">✦</span>
+            </div>
+
+            <div class="footer__links">
+                <a href="#hero">Balik ke atas 🚀</a>
+            </div>
+
+            <p class="footer__copy">
+                &copy; 2026 — Project Based Learning Website Virtual Gift HTML, CSS, and JS 
+            </p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Kembali ke atas">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
+
+
+    <!-- ============================================================
+       QUIZ OVERLAY
+  ============================================================ -->
+  <div id="quizOverlay" class="quiz-overlay" role="dialog" aria-modal="true" aria-label="Quiz Matematika">
+ 
+    <!-- Background partikel dekoratif -->
+    <div class="quiz-overlay__particles" aria-hidden="true" id="quizParticles"></div>
+ 
+    <!-- Tombol tutup -->
+    <button class="quiz-overlay__close" id="quizClose" aria-label="Tutup quiz">&times;</button>
+ 
+    <!-- Konten utama -->
+    <div class="quiz-overlay__inner">
+ 
+      <!-- Header -->
+      <div class="quiz-overlay__header">
+        <span class="quiz-overlay__tag">🧮 Soal Integral UAS HARVARD</span>
+        <h2 class="quiz-overlay__title">
+          Hitung nilai dari <em>I</em> berikut ini~
+        </h2>
+        <p class="quiz-overlay__hint">
+          (Jawab dengan angka saja ya, bilangan bulat)
+        </p>
+      </div>
+ 
+      <!-- Soal Matematika — dirender KaTeX -->
+      <div class="quiz-overlay__math-box">
+        <div class="quiz-overlay__math" id="quizMath">
+          $$I = \int_{-2026}^{2026} \left[
+            \frac{x^7 e^{\sin^2(x)} \ln(x^4+1)}{x^2 + \cos(x) + 2}
+            +
+            \frac{\sinh^3(x)\arctan^2(x)}{e^{x^2} + \ln(|x|+e)}
+            +
+            \frac{\sin^2(e^{\pi x}) + \cos^2(e^{\pi x})}{2}
+          \right] dx$$
+        </div>
+      </div>
+ 
+      <!-- Form Jawaban -->
+      <div class="quiz-overlay__form">
+        <label class="quiz-overlay__label" for="quizAnswer">
+          Jawaban kamu:
+        </label>
+        <div class="quiz-overlay__input-row">
+          <span class="quiz-overlay__input-prefix">I =</span>
+          <input
+            type="text"
+            id="quizAnswer"
+            class="quiz-overlay__input"
+            placeholder="ketik jawabanmu..."
+            autocomplete="off"
+            maxlength="20"
+          />
+          <button class="quiz-overlay__submit" id="quizSubmit">
+            Jawab!
+          </button>
+        </div>
+ 
+        <!-- Pesan feedback -->
+        <div class="quiz-overlay__feedback" id="quizFeedback" aria-live="polite"></div>
+      </div>
+ 
+      <!-- Hint toggle -->
+      <button class="quiz-overlay__hint-btn" id="quizHintBtn">
+        💡 Butuh clue?
+      </button>
+      <div class="quiz-overlay__hint-box" id="quizHintBox">
+        <p>Coba perhatiin sifat fungsi <strong>ganjil</strong> dan <strong>genap</strong> dalam integral. Dan ingat identitas trigonometri</p>
+      </div>
+ 
+    </div><!-- /quiz-overlay__inner -->
+ 
+  </div><!-- /quiz-overlay -->
+  <div id="quizBg" class="quiz-overlay__bg"></div>
+
+  <script src="/scripts/loader.js"></script>
+  <script src="/scripts/floating.js"></script>
+  <script src="/scripts/header.js"></script>
+  <script src="/scripts/hero.js"></script>
+  <script src="/scripts/apprec.js"></script>
+  <script src="/scripts/gall.js"></script>
+  <script src="/scripts/closing.js"></script>
+  <script src="/scripts/footer.js"></script>
+  <script src="/scripts/quiz.js"></script>
+</body>
+</html>
