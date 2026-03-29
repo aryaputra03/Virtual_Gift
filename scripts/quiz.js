@@ -7,7 +7,7 @@
   /* ----------------------------------------------------------
      ⚠️  GANTI URL INI DENGAN LINK YANG KAMU MAU  ⚠️
   ---------------------------------------------------------- */
-  var REWARD_URL = 'https://wa.me/6289503687908?text=Kak%20aku%20abil%20sudah%20menamatkan%20quiz%20cuman%20aku%20mengakui%20aku%20ngecheat';
+  var REWARD_URL = 'https://www.instagram.com/reel/DUCP9_mE35V/?igsh=MTlsNjhxY2hzeHdjYQ==';
 
   /* ----------------------------------------------------------
      Jawaban benar (tidak case-sensitive, toleransi spasi)
